@@ -1,0 +1,78 @@
+    /* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: darkblue;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+/* ======================== header ======================== */
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* ======================== Main FlexBox ========================= */
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.menu-lateral{
+  flex-direction: 1;
+}
+
+.conteudo{
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section {
+  padding: 10px;
+} 
+
+.item-conteudo{
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*======================== Footer ========================*/
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #666;
+}

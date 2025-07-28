@@ -1,0 +1,121 @@
+    /* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+}
+
+.header-1 {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  margin-top: 20px;
+}
+
+.footer-1 {
+  margin: 30px;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+
+}
+
+/* ======================== Grids ========================= */
+/* 
+fr = fracao do espaco 
+repeat(nColum, tam) =
+auto
+minmax(min, max)
+*/
+.container{
+  display: grid;
+  background-color: black;
+  grid-template-columns: repeat(3, 200px); 
+  /*separa os items em colunas*/
+  /*separa os items em linhas*/
+  /* grid-template-rows: 200px 100px 50px; */
+  /* gap:30px;
+  justify-items: stretch;
+  align-items: ; */
+  align-content: center ;
+  place-items: center start;
+  height: 100vh;
+}
+
+.item{
+  background-color: lightblue;
+  padding: 34px;
+  margin: 20px;
+}
+
+/* display grid-template-areas */
+
+/* 
+grid-row: informa em qual linha o elemento fica
+grid-column: informa em qual coluna o elemento fica
+span: informa se o elemento vai ocupar x colunas
+justify-self: informe onde o elemento fica na pagina, horizontal
+align-self? informa onde o elemento fica na pagina, vertical
+*/
+
+#container-simu{
+  display: grid;
+  grid-template-areas: 
+    'header header'
+    'aside article'
+    'section section'
+    'footer footer'
+  ;
+  gap: 30px;
+  grid-auto-rows: 200px 100px;
+}
+
+header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+
+aside{
+  grid-area: aside;
+  background-color: violet;
+}
+article{
+  grid-area: article;
+  background-color: blue;
+
+}
+section{
+  grid-area: section;
+  background-color: yellow;
+
+}
+footer{
+  grid-area: footer;
+  background-color: green;
+
+}
+
+/* .item2{
+  height: 50px;
+} */
