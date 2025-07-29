@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ================ header ================ -->
     <header class=" align-items-center">
         <h1>Front-End</h1>
         <nav>
             <ul class="d-flex gap-4">
-                <li><a href="">Home</a></li>
-                <li><a href="">JS</a></li>
+                <li><a href="Home">Home</a></li>
+                <li><a href="JavaScript">JS</a></li>
                 <li><a href="">React + APIs</a></li>
                 <li><a href="">Node</a></li>
                 <li><a href="">Fullstack</a></li>
@@ -30,31 +31,31 @@
             <button class="btn btn-success">PDF</button>
         </a>
     </header>
+    <!-- ================ main ================ -->
     <main>
-        <section>
+        <section id="Home">
             <h2>Julho - Fundamentos + Setup</h2>
             <ol>
                 <li>- Revisar HTML completo: semantica, formularios, tabelas. <span>OK</span></li>
-                <li>- Praticar CSS: flexbox <span>OK</span>, grid <span>OK</span>, media queries, animacoes.</li>
+                <li>- Praticar CSS: flexbox <span>OK</span>, grid <span>OK</span>, media queries <span>OK</span>, animacoes.</li>
                 <li>- Estudar JS basico: variveis, funes, objetos, DOM.</li>
                 <li>- Configurar ambiente: VSCode, Git, Node.js, TailwindCSS.</li>
                 <li>- Git bsico: init, clone, push, pull, commit</li>
             </ol>
             
            <aside>
-            <h3>Projetos:</h3>
-            <p>- Pgina de portflio simples (HTML e CSS).</p>
-            <p>- To-Do List em JS manipulando DOM.</p>
-            <section>
-                <ul>
-                    <li><a href="pdf/Guia_HTML_CSS_Frontend_Jr.pdf">Guia Html e Css</a></li>
-                    <li><a href="pdf/Guia_HTML_CSS_Frontend_Jr.pdf">Guia JavaScript</a></li>
-                </ul>
-            </section>
+                <h3>Projetos:</h3>
+                <p>- Pgina de portflio simples (HTML e CSS).</p>
+                <p>- To-Do List em JS manipulando DOM.</p>
+                <section>
+                    <ul>
+                        <li><a href="pdf/Guia_HTML_CSS_Frontend_Jr.pdf">Guia Html e Css</a></li>
+                        <li><a href="pdf/Guia_HTML_CSS_Frontend_Jr.pdf">Guia JavaScript</a></li>
+                    </ul>
+                </section>
            </aside>
         </section>
-            <!-- ============================== -->
-         <section>
+        <section id="JavaScript">
              <h2>Agosto - JavaScript Avanado + React Incio</h2>
              <ol>
                 <li>- Aprender ES6+: arrow functions, destructuring, async/await.</li>
@@ -65,20 +66,91 @@
              </ol>
              <aside>
                  <h3>Projetos:</h3>
-                 - App de Clima (consumo de API).
-                 - Pagina pessoal com navegacao em React.
+                 <ul>
+                     <li>- App de Clima (consumo de API).</li>
+                     <li>- Pagina pessoal com navegacao em React.</li>
+                 </ul>
              </aside>
-         </section>
-         <section id="links">
+        </section>
+
+        <section id="React">
+             <h2>Setembro - Projetos React + APIs</h2>
+             <ol>
+                <li>- Criar CRUD com React (Create, Read, Update, Delete).</li>
+                <li>- Trabalhar com formulrios e validao</li>
+                <li>- Componentizao e reuso.</li>
+                <li>- Listas dinamicas com useState</li>
+                <li>- Uso de bibliotecas como PrimeReact ou MUI.</li>
+             </ol>
+             <aside>
+                <h3>Projetos:</h3>
+                <ul>
+                    <li>- App de tarefas (To-Do avanado).</li>
+                    <li>- Loja digital Drip Store (categorias, produtos, filtro).</li>
+                    <li>- Portflio V2 completo.</li>
+                </ul>
+             </aside>
+        </section>
+
+        <section id="Node">
+             <h2>Outubro - Node.js + APIs REST</h2>
+             <ol>
+                <li>- Node.js bsico: criar servidor com Express.js.</li>
+                <li>- Rotas, middlewares, controllers.</li>
+                <li>- JSON e APIs REST (GET, POST, PUT, DELETE).</li>
+                <li>- Testar com Postman, usar JSON Server ou arquivo simulado</li>
+                <li>- Conectar com front-end usando fetch/axios.</li>
+             </ol>
+             <aside>
+                 <h3>Projetos:</h3>
+                 <ul>
+                     <li>- API de Produtos com Node.js.</li>
+                     <li>- Integrao React + Express com CRUD.</li>
+                 </ul>
+             </aside>
+        </section>
+
+        <section id="Fullstack">
+             <h2>Novembro - Fullstack + Deploy</h2>
+             <ol>
+                <li>- Conectar React com Node.js (API prpria).</li>
+                <li>- Deploy do front no Vercel.</li>
+                <li>- Deploy do back no Render.</li>
+                <li>- Estrutura de projeto MVC.</li>
+                <li>- Melhorar organizao dos projetos e codigo</li>
+             </ol>
+             <aside>
+                 <h3>Projetos:</h3>
+                 <ul>
+                     <li>- App Fullstack: blog ou gerenciador de tarefas.</li>
+                     <li>- Portflio final atualizado e elegante.</li>
+                 </ul>
+             </aside>
+        </section>
+
+        <section id="Revisao">
+             <h2>Dezembro - Revisao + Portfolio + Entrevistas</h2>
+             <ol>
+                <li>- Refatorar projetos e adicionar README completos.</li>
+                <li>- Revisar HTML, CSS, JS, React e Node.</li>
+                <li>- Simular entrevistas tcnicas.</li>
+                <li>- Estilizao com Styled Components ou Tailwind.</li>
+                <li>- Criar currculo, LinkedIn e divulgar portflio.</li>
+             </ol>
+        </section>
+        <!-- ================ Links ================ -->
+
+        <section id="links">
             <h2>Links de onde foi estudado</h2>
                 <ul>
                     <li><a href="https://youtu.be/Z4CbaGCEsTY?si=2ssJFOOdw8YTmnEF" target="_blank">FlexBox</a></li>
                     <li><a href="https://youtu.be/IpGFoNYJJU8?si=Vqc5I_kjpHq4D_Dw" target="_blank">Grid</a></li>
+                    <li><a href="https://youtu.be/zt5W562mYRo?si=NA15q9QU1kgVk5_x" target="_blank">MediaQuery</a></li>
                     <li><a href="pdf/Desafios_Flexbox_Grid.pdf">Desafio FlexBox e Grid</a></li>
                 </ul>
-
-         </section>
+        </section>
     </main>
+    <!-- ================ footer ================ -->
     <footer>
 
     </footer>

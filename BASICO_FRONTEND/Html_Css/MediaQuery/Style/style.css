@@ -1,0 +1,36 @@
+h1{
+  color: red;
+}
+
+h2{
+  color: red;
+}
+/* Celulares */
+@media(max-width: 500px){
+  h1{
+    color: green;
+  }
+  h2{
+    color: green;
+  }
+}
+/* Tablets */
+@media(min-width: 768px) and (max-width: 1024px){
+h1{
+    color: yellow;
+  }
+  h2{
+    color: yellow;
+  }
+}
+
+/* orientacao horizontal */
+/* quando o tamanho horizontal for maior que o vertical */
+@media(orientation: landscape){
+  h1{
+    color: blue;
+  }
+  h2{
+    color: blue;
+  }
+}
