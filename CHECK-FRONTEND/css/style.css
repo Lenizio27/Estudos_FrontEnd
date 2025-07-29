@@ -65,3 +65,17 @@ section{
     align-items: center;
     justify-content: center;
 }
+
+.ul-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* ======================= footer ====================== */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
