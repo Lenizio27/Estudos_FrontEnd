@@ -7,10 +7,15 @@ body{
 }
 header{
     display: flex;
+    align-items: center;
+}
+.header{
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin: 20px 0px;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -19,6 +24,9 @@ ul{
     list-style: none;
     display: flex;
     gap: 10px;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
 }
 #links{
     border-top: 2px solid white;
@@ -33,11 +41,17 @@ section{
 }
 
 @media(max-width: 768px){
-    header{
+    .header{
         flex-wrap: wrap;
     }
     nav{
         order: 1;
+    }
+    .ul-header{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
     
 }
