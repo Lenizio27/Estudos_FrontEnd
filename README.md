@@ -4,7 +4,7 @@ Este repositório foi criado com o objetivo de documentar meu progresso no apren
 Aqui você encontrará uma página guia com links para projetos práticos, aulas e desafios desenvolvidos ao longo dos estudos.
 
 👉 Acesse a 
-**[página guia clicando aqui](https://lenizio27.github.io/Estudos_FrontEnd/CHECK-FRONTEND/index.html)**.  
+**[página guia clicando aqui](https://lenizio27.github.io/Estudos_FrontEnd/CHECK_FRONTEND/index.html)**.  
 Na barra de navegação, clique em **"Práticas"** para visualizar os projetos desenvolvidos em aula.
 
 ---
