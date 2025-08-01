@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos sólidos</title>
+    <link rel="stylesheet" href="/BASICO_FRONTEND/JavaScript/style.css">
+</head>
+<body>
+    <header>
+        <div id="DivHeader">
+            <h1>Fundamentos JS</h1>
+            <nav>
+                <ul class="NavHeader">
+                    <li><a href="">dados</a></li>
+                    <li><a href="">Variaveis</a></li>
+                    <li><a href="">Operadores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="DivMain">
+            <section>
+                <h2>Tipos de dados</h2>
+                <ul>
+                    <li>String:
+                        <p> - dados de texto</p>
+                    </li>
+                    <li>Number:
+                        <p> - dados de numeros. ex: 2, 2.5</p>
+                    </li>
+                    <li>Boolean
+                        <p> - dados de valor logico. ex: verdadeiro, falso</p>
+                    </li>
+                    <li>Undefined:
+                        <p> - valor de variavel declara.</p>
+                    </li>
+                    <li>Null:
+                        <p> - valor vazio intencionalmente pelo Dev</p>
+                    </li>
+                    <li>Symbol
+                        <p> - ES6 - dado unico e imutavel</p>
+                    </li>
+                    <li>BigInt
+                        <p> - Numeros maiores que o Number consegue suportar acrescentando "n" no final</p>
+                    </li>
+                    <li>Dados não-primitivos
+                        <p> - Os tipos de dados não-primitivos, ao contrário dos primitivos, não armazenam o valor diretamente. Em vez disso, eles armazenam uma referência (um endereço de memória) para o local onde o valor real está armazenado. Isso significa que, quando você atribui um objeto a uma variável, a variável não contém o objeto em si, mas sim um ponteiro para ele.</p>
+                        <p> - Objetos Literais let n = {}: Coleções de pares chave-valor.</p>
+                        <p> - Arrays []: Listas ordenadas de valores.</p>
+                        <p> - Funções (){}</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Variáveis</h2>
+                <ul>
+                    <li>var:
+                        <p>forma mais antiga, define o valor da variavel</p>
+                    </li>
+                    <li>let:
+                        <p>criada em 2015 no ecmascript6, escopo de bloco, se gerada dentro de uma função so tera importancia dentro de mesma</p>
+                    </li>
+                    <li>const:
+                        <p>tambem criada no ecmascript6, escopo de bloco,maior diferencial é sua imutabilidade.</p>
+                    </li>
+                </ul>
+                <h3>Hoisting</h3>
+                <p>Hoisting (que pode ser traduzido como "içamento") é um comportamento do JavaScript em que as declarações de variáveis e funções são "movidas" para o topo do seu escopo antes da execução do código. No entanto, é crucial entender que apenas a declaração é içada, não a inicialização.</p>
+                <p>Hoisting de Funções: As declarações de função (function declarations) são completamente içadas, tanto a declaração quanto a sua implementação. Isso permite que você chame uma função antes de sua declaração no código.</p>
+            </section>
+            <section>
+                <h2>Operadores</h2>
+                <h3>Operadores Aritméticos</h3>
+                <aside class="AlignBox">
+                    <table>
+                        <tr>
+                            <th>somar</th>
+                            <th>subtrair</th>
+                            <th>dividir</th>
+                            <th>Multiplicar</th>
+                            <th>resto</th>
+                            <th>elevado</th>
+                            <th>incremento</th>
+                            <th>decremento</th>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>-</td>
+                            <td>/</td>
+                            <td>*</td>
+                            <td>%</td>
+                            <td>**</td>
+                            <td>++</td>
+                            <td>--</td>
+                        </tr>
+                    </table>
+                </aside>
+                <h3>Operadores de Atribuição</h3>
+                <aside class="AlignBox">
+                    <table>
+                        <tr>
+                            <th>somar</th>
+                            <th>subtrair</th>
+                            <th>dividir</th>
+                            <th>Multiplicar</th>
+                            <th>resto</th>
+                            <th>elevado</th>
+                        </tr>
+                        <tr>
+                            <td>+=</td>
+                            <td>-=</td>
+                            <td>/=</td>
+                            <td>*=</td>
+                            <td>%=</td>
+                            <td>**=</td>
+                        </tr>
+                    </table>
+                </aside>
+                <h3>Operadores de Comparação(Relacionais)</h3>
+                <aside class="AlignBox">
+                    <table>
+                        <tr>
+                            <th>igual</th>
+                            <th>Identico</th>
+                            <th>diferente</th>
+                            <th>est diferente</th>
+                            <th>maior que</th>
+                            <th>menor que</th>
+                            <th>maior/igual</th>
+                            <th>menor/igual</th>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>===</td>
+                            <td>!=</td>
+                            <td>!==</td>
+                            <td>></td>
+                            <td><</td>
+                            <td>>=</td>
+                            <td><=</td>
+                        </tr>
+                    </table>
+                </aside>
+                <h3>Operadores Logicos</h3>
+                <aside class="AlignBox">
+                    <table>
+                        <tr>
+                            <th>AND</th>
+                            <th>OR</th>
+                            <th>NOT</th>
+                        </tr>
+                        <tr>
+                            <td>&&</td>
+                            <td>||</td>
+                            <td>!</td>
+                        </tr>
+                    </table>
+                </aside>
+                <h3>Operador Ternario</h3>
+                <p>sintaxe: condição ? valor1(caso True) : valor2(caso False)</p>
+                <pre>
+                    let idade = 20;
+                    let status = (idade >= 18) ? "Adulto" : "Menor de idade";
+                    console.log(status); // Saída: "Adulto"
+                </pre>
+                <h3>Operadores de tipo</h3>
+                <p>typeof: Retorna uma string indicando o tipo do operando.</p>
+                <pre>
+                    let n1 = 10;
+                    console.log(typeof(n1))
+                    result: Number
+                </pre>
+                <p>instanceof: Retorna true se um objeto é uma instância de um tipo de objeto.</p>
+                <pre>
+                    let data = new Date(); 
+                    data instanceof Date; // true
+                </pre>
+                <h3>Operador Bittwise(Bit a Bit)</h3>
+                <p>Tratam seus operandos como uma sequência de 32 bits (zeros e uns) e realizam operações em nível de bit. São menos comuns em programação web diária, mas úteis em cenários de baixo nível.</p>
+                 <aside class="AlignBox">
+                    <table>
+                        <tr>
+                            <th>AND</th>
+                            <th>OR</th>
+                            <th>XOR</th>
+                            <th>NOT</th>
+                            <th>Left shift</th>
+                            <th>Right shift</th>
+                            <th>Zero-fill right shift</th>
+                        </tr>
+                        <tr>
+                            <td>&</td>
+                            <td>|</td>
+                            <td>^</td>
+                            <td>~</td>
+                            <td><<</td>
+                            <td>>></td>
+                            <td>>>></td>
+                        </tr>
+                    </table>
+                </aside>
+                <h3>Spread</h3>
+                <p>( ... ) : Usado para "espalhar" elementos de um array/objeto ou para agrupar o "resto" dos argumentos de uma função.</p>
+            </section>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

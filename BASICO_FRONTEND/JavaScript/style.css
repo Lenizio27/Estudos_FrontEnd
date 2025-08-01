@@ -1,0 +1,71 @@
+body{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(33, 0, 37);
+    color: white;
+}
+
+:root{
+    --cor0:  #fff ;
+    --cor1:  #937001 ;
+    --cor2:  #ae881b ;
+    --cor3:  #c8a036 ;
+    --cor4:  #e3b750 ;
+    --cor5:  #fdcf6a ;
+    --cor6:  #008cff ;
+}
+
+table{
+    display: flex;
+    border: 1px solid white;
+    flex-wrap: wrap;
+}
+
+td, th{
+    border:1px solid white;
+    text-align: center;
+}
+
+/* ===== Header ===== */
+header{
+    width: 100%;
+}
+#DivHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1280px;
+    margin: auto;
+}
+.NavHeader{
+    display: flex;
+    gap: 15px;
+    li{
+        list-style: none;
+    }
+    a{
+        color: white;
+    }
+}
+/* ===== Main ===== */
+
+main{
+    width: 100%;
+    margin: auto;
+}
+#DivMain{
+    max-width: 1280px;
+    margin: auto;
+}
+section{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 5px 0px;
+}
+.AlignBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+}
