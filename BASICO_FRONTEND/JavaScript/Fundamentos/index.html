@@ -12,7 +12,8 @@
             <h1>Fundamentos JS</h1>
             <nav>
                 <ul class="NavHeader">
-                    <li><a href="">dados</a></li>
+                    <li><a href="/CHECK_FRONTEND/index.html">Home</a></li>
+                    <li><a href="">Dados</a></li>
                     <li><a href="">Variaveis</a></li>
                     <li><a href="">Operadores</a></li>
                 </ul>
@@ -203,6 +204,52 @@
                 </aside>
                 <h3>Spread</h3>
                 <p>( ... ) : Usado para "espalhar" elementos de um array/objeto ou para agrupar o "resto" dos argumentos de uma função.</p>
+            </section>
+            <section>
+                <h2>Estruturas de controle</h2>
+                <p>Essencialmente, elas se dividem em duas categorias principais: Estruturas Condicionais (para tomar decisões) e Estruturas de Repetição (para executar tarefas repetitivas).</p>
+                <h3>Estruturas Condicionais</h3>
+                <p>Permitem que seu programa execute diferentes blocos de código com base em se uma condição é verdadeira (true) ou falsa (false).</p>
+                <h4>if</h4>
+                <p>É a estruturas condicional mais basico, executa uma linha de codigos caso a condição seja verdadeira.</p>
+                <pre>
+                    let n1 = 10;
+                    if(n1 > 0){
+                        alert(n1 + " é um número positvo")
+                    }
+                </pre>
+                <h4>if else</h4>
+                <p>if else é utilizado quando caso a primeira afirmativa for falsa o else executa o segundo bloco de codigo</p>
+                <pre>
+                    let n2 = 20;
+                    if(n2 <= 10){
+                        console.log(n2 + " maior ou igual a 10")
+                    }else{
+                        console.log(n2 + " menor que 10")
+                    }
+                </pre>
+                <p>obs: o if pode ser usado ao lado do else com um espaçamento caso queira dar uma nova condição para o bloco de codigo alternativo.</p>
+                <h4>Switch Case</h4>
+                <p>Uma alternativa ao if...else if...else para comparar uma variável com múltiplos valores possíveis. É ótimo para legibilidade quando há muitas condições.</p>
+                <pre>
+                    let permissao = "gerente";
+
+                    switch (permissao) {
+                        case "comum":
+                            console.log("Acesso Comum")
+                            break;
+                        case "gerente":
+                            console.log("Acesso exclusivo")
+                            break;
+                        case "admin";
+                            console.log("Acesso total");
+                            break
+                        default:
+                            console.log("Acesso Negado")
+                    }
+                </pre>
+                <h3>Estruturas de Repetição</h3>
+                <p>Permitem executar um bloco de código repetidamente enquanto uma condição for verdadeira.</p>
             </section>
         </div>
     </main>

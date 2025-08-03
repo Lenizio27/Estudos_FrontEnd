@@ -40,6 +40,9 @@ header{
 .NavHeader{
     display: flex;
     gap: 15px;
+    padding: 0px;
+    margin: 0px;
+    
     li{
         list-style: none;
     }
