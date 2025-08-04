@@ -248,8 +248,74 @@
                             console.log("Acesso Negado")
                     }
                 </pre>
-                <h3>Estruturas de Repetição</h3>
+                <h3>Estruturas de Repetição(Loops)</h3>
                 <p>Permitem executar um bloco de código repetidamente enquanto uma condição for verdadeira.</p>
+                <h4>for</h4>
+                <p>O loop mais comum, ideal quando você sabe de antemão quantas vezes quer que o bloco de código seja executado.</p>
+               <pre>
+                sintaxe:
+                    for(inicializacao; condicao; incremento){
+                    }
+                ex:
+                    for (let i = 0; i < 5; i++){
+                        console.log("O numero e: " + i)
+                    }
+               </pre>
+               <h4>While(enquanto)</h4>
+               <p>Executa um bloco de código enquanto a condição especificada for verdadeira. É ideal quando você não sabe quantas iterações serão necessárias.</p>
+               <pre>
+                sintaxe: enquanto for true continua
+                    while(condição){
+                        bloco de condigo
+                    }
+                ex:
+                    let moedas = 10;
+                    let tentativas = 0
+                    while(moedas > 0){
+                        moedas --;
+                        tentativas++;
+                        console.log("Gastou uma moeda. Restam: " + moedas)
+                    }
+                    console.log("acabou as moedas")
+               </pre>
+               <h4>do...while</h4>
+               <p>Similar ao while, mas com uma diferença crucial: o bloco de código é executado pelo menos uma vez, pois a condição é verificada após a primeira execução.</p>
+               <pre>
+                    sintaxe:
+                        do{
+                            bloco de codigo
+                        }while(condição);
+                    ex: 
+                        let senha;
+                        do{
+                            senha = prompt("Digite sua senha(deve ter mais de 4 caracteres)")
+                        }
+               </pre>
+               <h4>For...in</h4>
+               <p>for...in: Itera sobre as chaves (propriedades) de um objeto.</p>
+               <pre>
+                    sintaxe:
+                        const carro = {marca: "Ford", modelo: "Ka", ano: 2015};
+                        for (let chave in carro) {
+                        console.log(chave + ": " + carro[chave]); // marca: Ford, modelo: Ka, ano: 2015
+                        }
+               </pre>
+               <h4>For...of</h4>
+               <p>for...of: Itera sobre os valores de um objeto iterável (como Arrays, Strings, etc.). É a forma moderna e preferida para percorrer arrays.</p>
+               <pre>
+                    sintaxe: 
+                        const cores = ["vermelho", "verde", "azul"];
+                        for (let cor of cores) {
+                        console.log(cor); // vermelho, verde, azul
+                        }
+               </pre>
+               <h3>Controle dentro de Loops:</h3>
+               <h4>break e continue</h4>
+               <p>break: Interrompe e sai completamente do loop.</p>
+               <p>continue: Pula a iteração atual e vai para a próxima.</p>
+            </section>
+            <section>
+                <h2>Funções</h2>
             </section>
         </div>
     </main>
