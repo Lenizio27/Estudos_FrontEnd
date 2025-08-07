@@ -316,6 +316,93 @@
             </section>
             <section>
                 <h2>Funções</h2>
+                <h3>O que é uma função</h3>
+                <p>
+                    Pense em uma função como uma "máquina" ou uma "receita de bolo" que você cria para realizar uma tarefa específica.
+
+                    Você a define uma vez: escreve o código com as instruções dentro dela.
+
+                    Você a executa quantas vezes quiser: "chama" a função pelo nome para que ela execute as instruções.
+                </p>
+                <h3>Declarando Funções</h3>
+                <p>
+                    Esta é a forma mais clássica de criar uma função. Ela usa a palavra-chave function, seguida pelo nome da função, uma lista de parâmetros entre parênteses e o bloco de código a ser executado entre chaves.
+
+                    Característica Principal: Sofre hoisting (içamento). Isso significa que você pode chamar a função no seu código antes mesmo de ela ter sido declarada, pois o JavaScript a "move" para o topo do escopo.
+                </p>
+
+                <h4>sintaxe:</h4>
+                <pre>
+                    function nomeDaFuncao(parametro1, parametro2) {
+                    // código a ser executado
+                    return resultado;
+                    }
+                </pre>
+                <h3>Expressão de Função:</h3>
+                <p>
+                    Nesta abordagem, você cria uma função (geralmente anônima, ou seja, sem nome) e a atribui a uma variável. A função se torna o valor daquela variável.
+
+                    Característica Principal: Não sofre hoisting. A variável (const ou let) é içada, mas sua atribuição (a função em si) não é. Portanto, você só pode chamar a função depois da linha em que ela foi definida.
+                </p>
+                <pre>
+                    const nomeDaVariavel = function(parametro1, parametro2) {
+                    // código a ser executado
+                    return resultado;
+                    }; // Note o ponto e vírgula opcional aqui, pois é uma atribuição
+
+                    ex: 
+                    const despedida = function(nome) {
+                    console.log("Até mais, " + nome + "!");
+                    };
+                    despedida("Carlos"); // Saída: "Até mais, Carlos!"
+                </pre>
+                <h3>Arrow Function</h3>
+                <p>
+                    Introduzidas no ES6, as arrow functions oferecem uma sintaxe mais curta e concisa, além de terem um comportamento diferente com a palavra-chave this (elas não têm seu próprio this, herdam do escopo ao redor).
+                </p>
+                <h4>caracteristicas:</h4>
+                <ul>
+                    <li>Sintaxe curta.</li>
+                    <li>Retorno implícito se não houver chaves {}.</li>
+                    <li>Sempre anônimas, precisam ser atribuídas a uma variável.</li>
+                    <li>Não sofrem hoisting</li>
+                </ul>
+                <pre>
+                    // Sintaxe completa
+                    const somar = (a, b) => {
+                    return a + b;
+                    };
+
+                    // Se houver apenas uma linha de retorno, pode omitir {} e 'return'
+                    const subtrair = (a, b) => a - b;
+
+                    // Se houver apenas um parâmetro, pode omitir os parênteses ()
+                    const dobrar = numero => numero * 2;
+
+                    // Sem parâmetros
+                    const darOi = () => "Oi!";
+
+                    ex: 
+                    const calcularArea = (largura, altura) => largura * altura;
+
+                    let area = calcularArea(10, 5);
+                    console.log(area); // Saída: 50
+                </pre>
+                <h3>Parâmetros e Argumentos</h3>
+                <ul>
+                    <li><strong>Parâmetros</strong>: São as "variáveis" listadas na definição da função. Funcionam como placeholders para os valores que a função espera receber.</li>
+                    <li><strong>Argumentos</strong>: São os valores reais que você passa para a função quando a chama.</li>
+                </ul>
+                <pre>
+                    // 'a' e 'b' são PARÂMETROS
+                    function multiplicar(a, b) {
+                    return a * b;
+                    }
+
+                    // 10 e 5 são ARGUMENTOS
+                    let resultado = multiplicar(10, 5);
+                </pre>
+                <h3>Recursos Modernos para Parâmetros (ES6+):</h3>
             </section>
         </div>
     </main>

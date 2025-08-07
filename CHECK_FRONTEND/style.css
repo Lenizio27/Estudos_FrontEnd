@@ -3,6 +3,8 @@ body{
     color: white;
     flex-direction: column;
     font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 a{
