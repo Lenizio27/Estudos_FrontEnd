@@ -1,11 +1,11 @@
 body{
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(33, 0, 37);
-    color: white;
+    color: #cacaca;
 }
 
 :root{
-    --cor0:  #fff ;
+    --cor0:  #cacaca ;
     --cor1:  #937001 ;
     --cor2:  #ae881b ;
     --cor3:  #c8a036 ;
@@ -23,6 +23,14 @@ table{
 td, th{
     border:1px solid white;
     text-align: center;
+}
+
+li{
+    margin: 5px 0px;
+}
+
+pre{
+    padding: 5px;
 }
 
 /* ===== Header ===== */

@@ -403,6 +403,62 @@
                     let resultado = multiplicar(10, 5);
                 </pre>
                 <h3>Recursos Modernos para Parâmetros (ES6+):</h3>
+                <p>
+                    Parâmetros Padrão (Default Parameters): Você pode definir um valor padrão para um parâmetro, caso nenhum argumento seja fornecido para ele.
+                </p>
+                <pre>
+                    function registrarUsuario(nome, plano = "Básico") {
+                    console.log(`${nome} registrado no plano ${plano}.`);
+                    }
+
+                    registrarUsuario("Bia"); // Saída: Bia registrado no plano Básico.
+                    registrarUsuario("Leo", "Premium"); // Saída: Leo registrado no plano Premium.
+                </pre>
+                <p>
+                    Parâmetros Rest (Rest Parameters): Permite que uma função aceite um número indefinido de argumentos como um array.
+                </p>
+                <pre>
+                    function somarTodos(...numeros) {
+                    let total = 0;
+                    for (let num of numeros) {
+                        total += num;
+                    }
+                    return total;
+                    }
+                    console.log(somarTodos(1, 2, 3));      // Saída: 6
+                    console.log(somarTodos(10, 20, 30, 40)); // Saída: 100
+                </pre>
+                <h3>Return em Funções</h3>
+                <ul>
+                    <li>a função pode ter apenas um return.</li>
+                    <li>Qualquer código após o return dentro da função não será executado.</li>
+                    <li>Se uma função não tiver uma instrução return, ela retornará undefined por padrão.</li>
+                </ul>
+                <pre>
+                    function isMaiorDeIdade(idade) {
+                    if (idade >= 18) {
+                        return true; // A função para aqui e retorna true
+                    }
+                    // Esta linha só é alcançada se a condição do if for falsa
+                    return false; 
+                    }
+
+                    let podeDirigir = isMaiorDeIdade(25); // podeDirigir agora tem o valor 'true'
+
+                    if (podeDirigir) {
+                    console.log("Pode tirar a carteira de motorista!");
+                    }
+                </pre>
+            </section>
+            <section>
+                <h2>Arrays e Objetos</h2>
+                <p>
+                    Tanto Objetos quanto Arrays são usados para armazenar uma coleção de dados. A grande diferença está em como eles organizam e como você acessa esses dados.
+                </p>
+                <ul>
+                    <li><strong>Arrays</strong>: Pense em uma lista ordenada, como uma lista de compras ou uma fila de pessoas. A ordem dos itens importa e você os acessa pela sua posição (índice).</li>
+                    <li><strong>Objetos</strong>: Pense em uma ficha de cadastro ou um dicionário. Você tem um conjunto de propriedades (ou "rótulos") e cada um tem um valor associado. A ordem geralmente não importa, e você acessa os valores através dos seus nomes (chaves).</li>
+                </ul>
             </section>
         </div>
     </main>
