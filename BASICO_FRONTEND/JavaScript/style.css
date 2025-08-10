@@ -41,6 +41,7 @@ pre{
 @media(max-width: 720px){
     pre{
         white-space: pre-line;
+        margin: auto 30px;
     }
 
 }

@@ -459,6 +459,33 @@
                     <li><strong>Arrays</strong>: Pense em uma lista ordenada, como uma lista de compras ou uma fila de pessoas. A ordem dos itens importa e você os acessa pela sua posição (índice).</li>
                     <li><strong>Objetos</strong>: Pense em uma ficha de cadastro ou um dicionário. Você tem um conjunto de propriedades (ou "rótulos") e cada um tem um valor associado. A ordem geralmente não importa, e você acessa os valores através dos seus nomes (chaves).</li>
                 </ul>
+                <aside>
+                    <h3>Objetos</h3>
+                    <p>
+                        Um objeto é uma coleção de pares chave-valor (key-value pairs).
+                    </p>
+                    <ul>
+                        <li>Chave (Key): É o nome da propriedade (um texto, ou string).</li>
+                        <li>Valor (Value): Pode ser qualquer tipo de dado: um texto, um número, um booleano, um array ou até mesmo outro objeto ou uma função.</li>
+                    </ul>
+                    <p><strong>Quando usar</strong>? Quando você tem um conjunto de dados que descrevem uma única "coisa", onde cada dado tem um rótulo claro. Ideal para representar itens como um usuário, um produto, um carro, etc.</p>
+                    <pre>
+                        sintaxe:
+                        let carro = {
+                            // chave: valor
+                            marca: "Ford",
+                            modelo: "Ka",
+                            ano: 2015,
+                            ligado: false,
+                            ligar: function() { // O valor pode ser uma função (método)
+                                this.ligado = true;
+                                console.log("Carro ligado!");
+                            }
+                            };
+                    </pre>
+
+                    <h4>Acessando Dados de um Objeto</h4>
+                </aside>
             </section>
         </div>
     </main>
