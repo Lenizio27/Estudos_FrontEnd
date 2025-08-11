@@ -38,6 +38,14 @@ pre{
     word-wrap: break-word; /* quebra palavras grandes para evitar overflow */
 }
 
+button{
+  padding: 5px;
+  a{
+    text-decoration: none;
+  }
+  border-radius: 10px;
+}
+
 @media(max-width: 720px){
     pre{
         white-space: pre-line;
@@ -49,6 +57,9 @@ pre{
 /* ===== Header ===== */
 header{
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 #DivHeader{
     display: flex;
@@ -84,7 +95,7 @@ main{
 section{
     padding: 10px;
     border: 1px solid white;
-    border-radius: 25px;
+    border-radius: 10px;
     margin: 5px 0px;
 }
 .AlignBox{
