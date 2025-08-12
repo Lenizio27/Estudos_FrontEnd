@@ -456,8 +456,12 @@
                     Tanto Objetos quanto Arrays são usados para armazenar uma coleção de dados. A grande diferença está em como eles organizam e como você acessa esses dados.
                 </p>
                 <ul>
-                    <li><strong>Arrays</strong>: Pense em uma lista ordenada, como uma lista de compras ou uma fila de pessoas. A ordem dos itens importa e você os acessa pela sua posição (índice).</li>
-                    <li><strong>Objetos</strong>: Pense em uma ficha de cadastro ou um dicionário. Você tem um conjunto de propriedades (ou "rótulos") e cada um tem um valor associado. A ordem geralmente não importa, e você acessa os valores através dos seus nomes (chaves).</li>
+                    <li>
+                        <strong>Arrays</strong>: Pense em uma lista ordenada, como uma lista de compras ou uma fila de pessoas. A ordem dos itens importa e você os acessa pela sua posição (índice).
+                    </li>
+                    <li>
+                        <strong>Objetos</strong>: Pense em uma ficha de cadastro ou um dicionário. Você tem um conjunto de propriedades (ou "rótulos") e cada um tem um valor associado. A ordem geralmente não importa, e você acessa os valores através dos seus nomes (chaves).
+                    </li>
                 </ul>
                 <aside>
                     <h3>Objetos</h3>
@@ -468,7 +472,9 @@
                         <li>Chave (Key): É o nome da propriedade (um texto, ou string).</li>
                         <li>Valor (Value): Pode ser qualquer tipo de dado: um texto, um número, um booleano, um array ou até mesmo outro objeto ou uma função.</li>
                     </ul>
-                    <p><strong>Quando usar</strong>? Quando você tem um conjunto de dados que descrevem uma única "coisa", onde cada dado tem um rótulo claro. Ideal para representar itens como um usuário, um produto, um carro, etc.</p>
+                    <p>
+                        <strong>Quando usar</strong>? Quando você tem um conjunto de dados que descrevem uma única "coisa", onde cada dado tem um rótulo claro. Ideal para representar itens como um usuário, um produto, um carro, etc.
+                    </p>
                     <pre>
                         sintaxe:
                         let carro = {
@@ -485,7 +491,82 @@
                     </pre>
 
                     <h4>Acessando Dados de um Objeto</h4>
+                    <p>1. Notação de Ponto (Dot Notation): Mais comum e fácil de ler</p>
+                    <pre>
+                        console.log(carro.marca); // Saída: "Ford"
+                        console.log(carro.ano);   // Saída: 2015
+                    </pre>
+                    <p>
+                        2. Notação de Colchetes (Bracket Notation): Mais flexível. Necessária quando a chave contém espaços, caracteres especiais ou quando o nome da chave está em uma variável.
+                    </p>
+                    <pre>
+                        console.log(carro['modelo']); // Saída: "Ka"
+                        let propriedade = 'ano';
+                        console.log(carro[propriedade]); // Saída: 2015 -> Acessa a chave contida na variável
+                    </pre>
+                    <h4>Modificando um Objeto</h4>
+                    <p>
+                        Você pode adicionar, alterar ou remover propriedades a qualquer momento.
+                    </p>
+                    <pre>
+                        // Alterando um valor
+                        carro.ano = 2018;
+                        console.log(carro.ano); // Saída: 2018
+
+                        // Adicionando uma nova propriedade
+                        carro.cor = "Branco";
+                        console.log(carro.cor); // Saída: "Branco"
+
+                        // Removendo uma propriedade
+                        delete carro.ligado;
+                        console.log(carro.ligado); // Saída: undefined
+                    </pre>
                 </aside>
+                <aside>
+                    <h3>Arrays</h3>
+                    <p>
+                        Um array é uma lista ordenada de valores. Cada valor é chamado de elemento, e cada elemento possui um índice (sua posição na lista), que começa em 0.
+                    </p>
+                    <p>
+                        Quando usar? Quando você tem uma coleção de itens similares e a ordem deles é importante ou quando você simplesmente precisa de uma lista. Ideal para representar itens como uma lista de tarefas, uma coleção de notas, uma sequência de nomes.
+                    </p>
+                    <pre>
+                        // Criando um array 'compras' usando a sintaxe literal []
+                        let compras = ["Arroz", "Feijão", "Batata", "Macarrão"];
+
+                        // Um array pode ter tipos de dados misturados (embora seja mais comum ter tipos iguais)
+                        let dadosVariados = ["João", 30, true, { cidade: "Fortaleza" }];
+                    </pre>
+                    <h4>Acessando Dados de um Array</h4>
+                    <pre>
+                        //Você sempre usa a notação de colchetes com o índice do elemento.
+                        console.log(compras[0]); // Saída: "Arroz" (o primeiro elemento é o índice 0)
+                        console.log(compras[2]); // Saída: "Batata"
+                    </pre>
+                    <h4>Propriedades e Métodos Comuns</h4>
+                    <p>Arrays vêm com muitas "ferramentas" (propriedades e métodos) úteis.</p>
+                    <p>.length: Retorna a quantidade de elementos no array.</p>
+                    <pre>
+                        console.log(compras.length); // Saída: 4
+                    </pre>
+                    <p>.push(): Adiciona um ou mais elementos no final do array.</p>
+                    <pre>
+                        compras.push("Frango");
+                        console.log(compras); // ["Arroz", "Feijão", "Batata", "Macarrão", "Frango"]
+                    </pre>
+                    <p>.pop(): Remove o último elemento do array.</p>
+                    <pre>
+                        compras.pop(); // Remove "Frango"
+                    </pre>
+                    <p>.forEach(): Executa uma função para cada elemento do array. Ótimo para percorrer a lista.</p>
+                    <pre>
+                        compras.forEach(function(item, indice) {
+                        console.log(`Item ${indice}: ${item}`);
+                        });
+                    </pre>
+                    <a href="../pdf/array_js_propriedades_metodos.pdf">PDF-TodosMetodos/Propriedades</a>
+                </aside>
+                <h4>O Poder da Combinação: O Mais Comum na Prática</h4>
             </section>
         </div>
     </main>
