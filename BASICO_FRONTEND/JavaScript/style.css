@@ -39,18 +39,12 @@ pre{
     word-wrap: break-word; /* quebra palavras grandes para evitar overflow */
 }
 
-@media(max-width: 768px){
-    pre{
-        white-space: pre-line;
-        margin: auto 30px;
-    }
-
-}
 
 /* ===== Header ===== */
 header{
     width: 100%;
 }
+
 #DivHeader{
     display: flex;
     flex-direction: column;
@@ -94,4 +88,16 @@ section{
     justify-content: center;
     overflow-x: auto;
     white-space: nowrap;
+}
+
+/* =====  */
+
+@media(max-width: 768px){
+    pre{
+        white-space: pre-line;
+        margin: auto 30px;
+    }
+    #DivHeader{
+        flex-direction: row;
+    }
 }
