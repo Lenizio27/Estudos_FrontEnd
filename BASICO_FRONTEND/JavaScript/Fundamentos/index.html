@@ -10,7 +10,7 @@
     <header>
         <div id="DivHeader">
             <h1>Fundamentos JS</h1>
-            <nav>
+            <nav id="desktopNav">
                 <ul class="NavHeader">
                     <li><a href="https://lenizio27.github.io/Estudos_FrontEnd/CHECK_FRONTEND/index.html">Home</a></li>
                     <li><a href="">Dados</a></li>
@@ -22,6 +22,7 @@
     </header>
     <main>
         <div id="DivMain">
+            <!-- TIPOS DE DADOS -->
             <section>
                 <h2>Tipos de dados</h2>
                 <ul>
@@ -54,6 +55,7 @@
                     </li>
                 </ul>
             </section>
+            <!-- VARIAVEIS -->
             <section>
                 <h2>Variáveis</h2>
                 <ul>
@@ -71,6 +73,7 @@
                 <p>Hoisting (que pode ser traduzido como "içamento") é um comportamento do JavaScript em que as declarações de variáveis e funções são "movidas" para o topo do seu escopo antes da execução do código. No entanto, é crucial entender que apenas a declaração é içada, não a inicialização.</p>
                 <p>Hoisting de Funções: As declarações de função (function declarations) são completamente içadas, tanto a declaração quanto a sua implementação. Isso permite que você chame uma função antes de sua declaração no código.</p>
             </section>
+            <!-- OPERADORES -->
             <section>
                 <h2>Operadores</h2>
                 <h3>Operadores Aritméticos</h3>
@@ -205,6 +208,7 @@
                 <h3>Spread</h3>
                 <p>( ... ) : Usado para "espalhar" elementos de um array/objeto ou para agrupar o "resto" dos argumentos de uma função.</p>
             </section>
+            <!-- ESTRUTURAS DE CONTROLE -->
             <section>
                 <h2>Estruturas de controle</h2>
                 <p>Essencialmente, elas se dividem em duas categorias principais: Estruturas Condicionais (para tomar decisões) e Estruturas de Repetição (para executar tarefas repetitivas).</p>
@@ -314,6 +318,7 @@
                <p>break: Interrompe e sai completamente do loop.</p>
                <p>continue: Pula a iteração atual e vai para a próxima.</p>
             </section>
+            <!-- FUNÇÕES -->
             <section>
                 <h2>Funções</h2>
                 <h3>O que é uma função</h3>
@@ -450,6 +455,7 @@
                     }
                 </pre>
             </section>
+            <!-- ARRAYS E OBJETOS -->
             <section>
                 <h2>Arrays e Objetos</h2>
                 <p>
@@ -526,8 +532,7 @@
                     <h3>Arrays</h3>
                     <p>
                         Um array é uma lista ordenada de valores. Cada valor é chamado de elemento, e cada elemento possui um índice (sua posição na lista), que começa em 0.
-                    </p>
-                    <p>
+                        <br>
                         Quando usar? Quando você tem uma coleção de itens similares e a ordem deles é importante ou quando você simplesmente precisa de uma lista. Ideal para representar itens como uma lista de tarefas, uma coleção de notas, uma sequência de nomes.
                     </p>
                     <pre>
@@ -564,9 +569,154 @@
                         console.log(`Item ${indice}: ${item}`);
                         });
                     </pre>
-                    <a href="../pdf/array_js_propriedades_metodos.pdf">PDF-TodosMetodos/Propriedades</a>
+                    <a href="../pdf/array_js_propriedades_metodos.pdf">Array</a>
                 </aside>
                 <h4>O Poder da Combinação: O Mais Comum na Prática</h4>
+                <p>
+                    No mundo real, a maioria das estruturas de dados complexas (como as que vêm de uma API) são uma combinação de arrays e objetos.
+                    <br>
+                    Por exemplo, você pode ter uma lista (array) de usuários, onde cada usuário é um objeto com suas próprias propriedades.
+                </p>
+
+                <pre>
+                    let usuarios = [
+                    { // Objeto no índice 0
+                        id: 1,
+                        nome: "Ana Silva",
+                        email: "ana@email.com",
+                        ativo: true
+                    },
+                    { // Objeto no índice 1
+                        id: 2,
+                        nome: "Bruno Costa",
+                        email: "bruno@email.com",
+                        ativo: false
+                    },
+                    { // Objeto no índice 2
+                        id: 3,
+                        nome: "Carlos Souza",
+                        email: "carlos@email.com",
+                        ativo: true
+                    }
+                    ];
+
+                    // Como acessar o e-mail do segundo usuário?
+                    // 1. Acesse o elemento de índice 1 do array: usuarios[1]
+                    // 2. Desse objeto retornado, acesse a propriedade 'email': .email
+                    console.log(usuarios[1].email); // Saída: "bruno@email.com"
+
+                    // Como encontrar todos os usuários ativos? (usando o método .filter de array)
+                    let usuariosAtivos = usuarios.filter(function(usuario) {
+                    return usuario.ativo === true;
+                    });
+
+                    console.log(usuariosAtivos); // Retorna um novo array com os objetos de Ana e Carlos
+                </pre>
+            </section>
+            <!-- DOM -->
+            <section>
+                <h2>O que é o DOM?</h2>
+                <p>
+                    Pense no seu arquivo HTML como uma planta arquitetônica de uma casa. Quando o navegador lê essa planta, ele constrói a casa de verdade. O DOM (Document Object Model) é essa "casa construída" na memória do navegador.
+                    <br>
+                    É uma representação do seu HTML em formato de objetos, organizados em uma estrutura de árvore. Cada tag (h1, p, div, button) se torna um "nó" ou um objeto nessa árvore.
+                </p>
+                <h3>O JavaScript pode interagir com essa árvore. Ele pode:</h3>
+                <ul>
+                    <li>Ler a árvore (encontrar qualquer elemento).</li>
+                    <li>Modificar a árvore (mudar textos, estilos, atributos).</li>
+                    <li>Ouvir o que acontece na árvore (eventos como cliques, digitação, etc.).</li>
+                </ul>
+                <p>
+                    Qualquer mudança que o JavaScript faz no DOM é refletida instantaneamente na página que o usuário vê
+                </p>
+                <h3>querySelector</h3>
+                <p>
+                    Antes de manipular um elemento, você precisa encontrá-lo e "pegá-lo". O querySelector é a ferramenta moderna e mais poderosa para isso.
+                </p>
+
+                <p>
+                    document.querySelector(seletor): Retorna o primeiro elemento da página que corresponde ao seletor CSS fornecido. Se nenhum for encontrado, retorna null.
+                </p>
+
+                <pre>
+                    // Selecionar um elemento pelo seu ID (#)
+                    const tituloPrincipal = document.querySelector('#titulo-principal');
+
+                    // Selecionar um elemento pela sua classe (.)
+                    const primeiroParagrafo = document.querySelector('.paragrafo');
+
+                    // Selecionar um elemento pelo nome da tag
+                    const cabecalho = document.querySelector('header');
+
+                    // Selecionar um botão que está desabilitado (seletor de atributo)
+                    const botaoInativo = document.querySelector('button[disabled]');
+
+                    // Selecionar um link com a classe 'ativo' dentro do menu principal
+                    const linkAtivo = document.querySelector('nav .link-ativo');
+                </pre>
+                <h3>querySelectorAll</h3>
+                <p>
+                    document.querySelectorAll(seletor): Retorna uma NodeList (que é muito parecida com um array) com todos os elementos que correspondem ao seletor.
+                </p>
+                <pre>
+                    / Pega todos os parágrafos com a classe 'item'
+                    const todosOsItens = document.querySelectorAll('.item');
+
+                    // Como é uma lista, podemos usar .forEach para percorrer cada um
+                    todosOsItens.forEach(function(item) {
+                    console.log(item.textContent); // Imprime o texto de cada item
+                    });
+                </pre>
+                <h3>Eventos</h3>
+                <p>
+                    Eventos são "sinais" que o navegador emite para avisar que algo aconteceu na página. O JavaScript pode "ouvir" esses sinais para disparar uma ação.
+                    <br>
+                    Alguns dos eventos mais comuns são:
+                </p>
+                <ul>
+                    <li><strong>click</strong>: Quando um elemento é clicado com o mouse.</li>
+
+                    <li><strong>mouseover</strong>: Quando o ponteiro do mouse passa por cima de um elemento.</li>
+
+                    <li><strong>mouseout</strong>: Quando o ponteiro do mouse sai de um elemento.</li>
+
+                    <li><strong>keydown</strong>: Quando uma tecla do teclado é pressionada.</li>
+
+                    <li><strong>keyup</strong>: Quando uma tecla do teclado é solta.</li>
+
+                    <li><strong>submit</strong>: Quando um formulário (form) é enviado.</li>
+
+                    <li><strong>focus</strong>: Quando um elemento de formulário (como um input) recebe o foco.</li>
+
+                    <li><strong>blur</strong>: Quando um elemento de formulário perde o foco.</li>
+
+                    <li><strong>load</strong>: Quando a página ou um recurso (como uma imagem) termina de carregar.</li>
+                </ul>
+                <h3>addEventListener</h3>
+                <p>
+                    Esta é a "cola" que une tudo. O método addEventListener "anexa um ouvinte de evento" a um elemento que você selecionou.
+                </p>
+                <pre>
+                    sintaxe:
+                    elemento.addEventListener('tipoDoEvento', funcaoCallback);
+                </pre>
+                <ul>
+                    <li>elemento: A variável que contém o elemento selecionado com querySelector.</li>
+
+                    <li>'tipoDoEvento': Uma string com o nome do evento que queremos ouvir (ex: 'click').</li>
+
+                    <li>funcaoCallback: A função que será executada automaticamente quando o evento ocorrer naquele elemento. "Callback" significa que é uma função que você passa para ser "chamada de volta" mais tarde.</li>
+                </ul>
+
+                <h3>fluxo de trabalho</h3>
+                <ul>
+                    <li>SELECIONAR o(s) elemento(s) que você quer manipular (querySelector).</li>
+
+                    <li>ESPERAR por uma ação do usuário (addEventListener).</li>
+
+                    <li>REAGIR à ação, executando uma função que modifica o DOM (alterando texto, estilo, classes, etc.).</li>
+                </ul>
             </section>
         </div>
     </main>

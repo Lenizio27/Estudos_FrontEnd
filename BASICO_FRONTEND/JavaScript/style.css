@@ -1,7 +1,8 @@
 body{
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(33, 0, 37);
     color: #cacaca;
+    word-spacing: 2px;
 }
 
 :root{
@@ -38,7 +39,7 @@ pre{
     word-wrap: break-word; /* quebra palavras grandes para evitar overflow */
 }
 
-@media(max-width: 720px){
+@media(max-width: 768px){
     pre{
         white-space: pre-line;
         margin: auto 30px;
