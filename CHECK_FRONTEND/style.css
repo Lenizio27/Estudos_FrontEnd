@@ -129,7 +129,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: larger;
+    font-size: 25px;
 }
 
 #navMobile.is-open{

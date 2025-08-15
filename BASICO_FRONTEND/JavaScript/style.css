@@ -97,7 +97,4 @@ section{
         white-space: pre-line;
         margin: auto 30px;
     }
-    #DivHeader{
-        flex-direction: row;
-    }
 }
