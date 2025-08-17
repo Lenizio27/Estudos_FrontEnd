@@ -1,47 +1,6 @@
-    /* Reset simples */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+  background-color: cadetblue;
 }
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: darkblue;
-  color: white;
-  padding: 20px;
-}
-
-.header-1 {
-  background-color: #0077cc;
-  color: white;
-  padding: 20px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-section {
-  margin-top: 20px;
-  color: black;
-}
-
-.footer-1 {
-  margin: 30px;
-  text-align: center;
-  font-size: 0.8em;
-  color: white;
-
-}
-
 /* ======================== Grids ========================= */
 /* 
 fr = fracao do espaco 
@@ -51,7 +10,7 @@ minmax(min, max)
 */
 .container{
   display: grid;
-  background-color: black;
+  background-color: rgb(70, 113, 114);
   grid-template-columns: repeat(3, 200px); 
   /*separa os items em colunas*/
   /*separa os items em linhas*/
@@ -68,6 +27,8 @@ minmax(min, max)
   background-color: lightblue;
   padding: 34px;
   margin: 20px;
+  color: rgb(75, 19, 19);
+  border-radius: 10px;
 }
 
 /* display grid-template-areas */
@@ -90,30 +51,39 @@ align-self? informa onde o elemento fica na pagina, vertical
   ;
   gap: 30px;
   grid-auto-rows: 200px 100px;
+  margin: 5px 0px;
 }
 
-header{
+.ExHeader{
     grid-area: header;
     background-color: blueviolet;
 }
 
-aside{
+.ExAside{
   grid-area: aside;
   background-color: violet;
 }
-article{
+.ExArticle{
   grid-area: article;
   background-color: blue;
 
 }
-section{
+.ExSection{
   grid-area: section;
   background-color: yellow;
 
 }
-footer{
+.ExFooter{
   grid-area: footer;
   background-color: green;
+
+}
+
+.ExLayout{
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
 
 }
 

@@ -1,11 +1,10 @@
 body{
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(33, 0, 37);
     color: #cacaca;
 }
 
 :root{
-    --cor0:  #cacaca ;
+    --cor0:  #210025 ;
     --cor1:  #937001 ;
     --cor2:  #ae881b ;
     --cor3:  #c8a036 ;
@@ -74,6 +73,11 @@ header{
     gap: 15px;
     padding: 0px;
     margin: 0px;
+
+    ul{
+        display: flex;
+        gap: 10px;
+    }
     
     li{
         list-style: none;
