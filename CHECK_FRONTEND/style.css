@@ -9,9 +9,16 @@ body{
 
 :root{
     --cor1: #030331;
+    --cor2: #5dccff;
 }
 a{
     text-decoration: none;
+    color: var(--cor2);
+    transition: .2s;
+}
+
+a:hover{
+    color: aquamarine;
 }
 
 ul{
@@ -130,6 +137,7 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 25px;
+    animation: animaMobile .1s ease-in-out ;
 }
 
 #navMobile.is-open{
@@ -145,4 +153,15 @@ footer{
     position: fixed !important;
     left: 10;
     right: 20px;
+}
+
+@keyframes animaMobile {
+    0%{
+        transform: translateX(100px);
+        display: none;
+    }
+    100%{
+        transform: translateX(0px);
+        display: flex;
+    }
 }
