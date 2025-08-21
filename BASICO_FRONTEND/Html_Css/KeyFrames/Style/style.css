@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(4, 47, 61);
+  background-color: #042f3d;
 }
 
 header{
@@ -14,4 +14,73 @@ button{
     text-decoration: none;
   }
   border-radius: 10px;
+}
+
+.box{
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+}
+
+.boxAnima{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border-radius: 0px 100px 100px 0;
+  animation: Shot 1s ease-in-out infinite ;
+}
+
+@keyframes Shot {
+  0%{
+    transform: scaleX();
+  }
+  100%{
+    height: 100px;
+  }
+}
+
+/* transform
+  deg = graus 
+*/
+.transformBox{
+  transform: translateX(100px);
+  transform: scaleX(1);
+  transform: rotate(20deg);
+}
+
+/* transition 
+  cubic-bazier ==
+*/
+.transitionBox{
+  transition-property: background-color, border-radius; /*Ordem*/
+  transition-duration: .5s; /*duracao*/
+  transition-delay: .1s; /*tempo para inicio e termino*/
+  transition-timing-function: ease-in-out; /*suavizaçao*/
+}
+.transitionBox:hover{
+  background-color: brown;
+  border-radius: 50%;
+}
+
+/* KeyFrames */
+
+.keyFramesBox{
+  animation-name: fly;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; /*cubicbazier e steps*/
+  animation-delay: .1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  /* animation-play-state: paused; */
+  /* animation: ; shorthand */
+}
+
+@keyframes fly {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(100vw - 100px));
+  }
 }

@@ -1,5 +1,6 @@
 body{
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #042f3d;
     color: #cacaca;
 }
 
@@ -57,15 +58,13 @@ button{
 header{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 #DivHeader{
+    width: 1280px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    max-width: 1280px;
+    justify-content: space-between;
     margin: auto;
 }
 .NavHeader{
@@ -108,4 +107,9 @@ section{
     justify-content: center;
     overflow-x: auto;
     white-space: nowrap;
+}
+
+footer{
+    display: grid;
+    place-items: center;
 }

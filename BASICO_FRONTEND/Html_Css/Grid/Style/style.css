@@ -1,6 +1,4 @@
-body{
-  background-color: cadetblue;
-}
+
 /* ======================== Grids ========================= */
 /* 
 fr = fracao do espaco 
@@ -11,7 +9,7 @@ minmax(min, max)
 .container{
   display: grid;
   background-color: rgb(70, 113, 114);
-  grid-template-columns: repeat(3, 200px); 
+  grid-template-columns: repeat(3, 30%); 
   /*separa os items em colunas*/
   /*separa os items em linhas*/
   /* grid-template-rows: 200px 100px 50px; */
