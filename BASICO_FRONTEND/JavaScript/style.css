@@ -47,9 +47,9 @@ header{
 
 #DivHeader{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     max-width: 1280px;
     margin: auto;
 }
@@ -64,6 +64,7 @@ header{
     }
     a{
         color: white;
+        text-decoration: none;
     }
 }
 /* ===== Main ===== */
