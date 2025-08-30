@@ -64,7 +64,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
 }
 .NavHeader{
@@ -83,6 +83,7 @@ header{
     }
     a{
         color: white;
+        text-decoration: none;
     }
 }
 /* ===== Main ===== */
