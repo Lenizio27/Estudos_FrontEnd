@@ -5,6 +5,10 @@ body{
     word-spacing: 2px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 :root{
     --cor0:  #cacaca ;
     --cor1:  #937001 ;

@@ -81,6 +81,6 @@ button{
     transform: translateX(0);
   }
   100%{
-    transform: translateX(calc(100vw - 100px));
+    transform: translateX(200px);
   }
 }

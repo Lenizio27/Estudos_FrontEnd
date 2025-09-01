@@ -6,6 +6,10 @@ body{
     margin: 0px;
     padding: 0px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 :root{
     --cor1: #030331;

@@ -2,8 +2,16 @@ body{
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
     background-color: #042f3d;
     color: #cacaca;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
+/* Esconde no IE e Edge antigo */
+body {
+  -ms-overflow-style: none;
+}
 :root{
     --cor0:  #210025 ;
     --cor1:  #937001 ;
