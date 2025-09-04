@@ -1,0 +1,42 @@
+#ExBody{
+    background-color: #005;
+}
+
+#ExHeader{
+    display: grid;
+    place-items: center;
+    max-width: 1080px;
+    margin: auto;
+}
+
+#ExMain{
+    display: grid;
+    max-width: 1080px;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 200px) ;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+#ExMain2{
+    display: grid;
+    max-width: 1080px;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 200px) ;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.ExArticle{
+    background-color: aqua;
+    display: grid;
+    place-items: center;
+    color: black;
+}
+
+#ExFooter{
+    max-width: 1080px;
+    margin: auto;
+}
