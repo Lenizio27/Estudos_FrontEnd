@@ -1,0 +1,97 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(56, 56, 255);
+    align-items: center;
+    & #divBody{
+        margin: auto;
+        width: 500px;
+        background-color: white;
+        height: 600px;
+        border-radius: 10px;
+    }
+}
+header{
+    text-align: center;
+}
+main{
+    text-align: center;
+
+    #asideTarefas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        margin-top: 5px;
+    }
+    & #formTarefas{
+        width: 450px;
+        margin: auto;
+    }
+    & input{
+        height: 20px;
+        width: 413px;
+        margin: auto;
+    }
+    & #btAdicionar{
+        height: 25px;
+        width: 25px;
+    }
+    & .tarefa{
+        height: 25px;
+        display: flex;
+        width: 90%;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-radius: 3px;
+        transition: .6s;
+
+        & .textInput{
+            margin-left: 3px;
+        }
+
+        & .lixeira{
+            position: absolute;
+            right: 5px;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+        }
+        & .concluida{
+            border-radius: 3px;
+            position: absolute;
+            right: 30px;
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+        }
+        & .feito{
+            font-size: larger;
+            background-color: green;
+            text-decoration: line-through;
+        }
+    }
+    #sectionConcluidas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        margin-top: 5px;
+        background-color: antiquewhite;
+        padding: 5px 0;
+    }
+}
