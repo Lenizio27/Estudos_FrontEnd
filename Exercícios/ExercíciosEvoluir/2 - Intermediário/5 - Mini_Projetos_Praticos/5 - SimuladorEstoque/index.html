@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de Estoque</title>
+</head>
+<body>
+    <div id="divBody">
+        <header>
+            <h1>Simulador de Estoque</h1>
+        </header>
+        <main>
+            <section>
+                <form >
+                    <input 
+                        type="text" placeholder="Adicionar Produto" id="inputProduto">
+                    <input type="number" placeholder="Valor" id="inputValor">
+                    <button id="btAdicionar" type="button">Adicionar</button>
+                </form>
+            </section>
+            <section>
+                <div>
+                    <select id="selectProduto">
+                        <option value="">Produtos</option>
+                    </select>
+                    <button id="verificarEstoque">Verificar</button>
+                </div>
+                <div></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
