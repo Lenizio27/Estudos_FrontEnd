@@ -12,21 +12,22 @@
             <h1>Simulador de Estoque</h1>
         </header>
         <main>
-            <section>
+            <!-- Adicionar -->
+            <section id="sectionAdicionar" class="styleSections">
                 <h2>Adicionar ao Estoque</h2>
                 <form >
-                    <input 
-                        type="text" placeholder="Adicionar Produto" id="inputProduto">
+                    <input type="text" placeholder="Adicionar Produto" id="inputProduto">
                     <input type="number" placeholder="Valor" id="inputValor">
                     <input type="number" placeholder="Quantidade" id="inputQuantidade">
                     <button id="btAdicionar" type="button">Adicionar</button>
                 </form>
                 <button id="btEstoqueTotal">Total do Estoque</button>
             </section>
-            <section>
+            <!-- Verificar -->
+            <section id="sectionVerificar" class="styleSections">
                 <h2>Verificar Estoque</h2>
                 <div>
-                    <select id="selectProduto">
+                    <select id="selectProduto" >
                         <option value="">Produtos</option>
                     </select>
                     <button id="btVerificarEstoque">Verificar</button>
@@ -35,6 +36,7 @@
             </section>
         </main>
     </div>
+    <footer>&copy; Lenizio Nascimento 2025</footer>
     <script src="script.js"></script>
 </body>
 </html>

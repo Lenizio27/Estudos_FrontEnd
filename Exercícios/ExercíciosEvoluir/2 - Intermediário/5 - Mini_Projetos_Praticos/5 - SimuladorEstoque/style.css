@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: blanchedalmond;
+    background-color: lightgray;
     & #divBody{
         margin: auto;
         max-width: 500px;
@@ -15,9 +15,56 @@ header{
 main{
     display: flex;
     margin: auto;
+    gap: 5px;
 }
 
 section{
     flex-grow: 1;
     width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    & input{
+        height: 20px;
+    }
+}
+#sectionAdicionar{
+    
+}
+
+#sectionVerificar{
+    
+}
+
+.styleSections{
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 1px 5px 10px #80808077;
+    transition: .6s;
+    
+}
+.styleSections:hover{
+    animation: forwards upperBox .4s ease-out ;
+    box-shadow: 1px 10px 10px #80808098;
+}
+
+footer{
+    text-align: center;
+    padding: 5px 0;
+}
+
+@keyframes upperBox {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(-1px, -2px);
+    }
 }
